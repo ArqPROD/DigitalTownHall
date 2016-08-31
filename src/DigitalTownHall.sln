@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalTownHall", "DigitalTownHall\DigitalTownHall.csproj", "{8CCC6FD4-813F-453F-A136-878F00EF0491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalTownHall.Tests", "C:\Users\renan\Documents\Visual Studio 2013\Projects\DigitalTownHall\DigitalTownHall.Tests\DigitalTownHall.Tests.csproj", "{63EEE035-0DF7-4D94-AC11-4892F625E245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{FFADF025-A722-4C39-A759-4EA44E153CAE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{7CCB7038-F310-4142-A99F-CBA19886D888}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\DigitalTownHall-WAWS-dev.json = PublishScripts\Configurations\DigitalTownHall-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CCC6FD4-813F-453F-A136-878F00EF0491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCC6FD4-813F-453F-A136-878F00EF0491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCC6FD4-813F-453F-A136-878F00EF0491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCC6FD4-813F-453F-A136-878F00EF0491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EEE035-0DF7-4D94-AC11-4892F625E245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EEE035-0DF7-4D94-AC11-4892F625E245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EEE035-0DF7-4D94-AC11-4892F625E245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EEE035-0DF7-4D94-AC11-4892F625E245}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CCB7038-F310-4142-A99F-CBA19886D888} = {FFADF025-A722-4C39-A759-4EA44E153CAE}
+	EndGlobalSection
+EndGlobal
