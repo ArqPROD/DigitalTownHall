@@ -2,6 +2,7 @@ using System.Web.Http;
 using WebActivatorEx;
 using DigitalTownHall;
 using Swashbuckle.Application;
+using System.Configuration;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -20,7 +21,9 @@ namespace DigitalTownHall
                         // However, there may be situations (e.g. proxy and load-balanced environments) where this does not
                         // resolve correctly. You can workaround this by providing your own code to determine the root URL.
                         //
-                        //c.RootUrl(req => GetRootUrlFromAppConfig());
+#if DEBUG == false
+                        c.RootUrl(req => GetRootUrlFromAppConfig()); 
+#endif
 
                         // If schemes are not explicitly provided in a Swagger 2.0 document, then the scheme used to access
                         // the docs is taken as the default. If your API supports multiple schemes and you want to be explicit
@@ -241,6 +244,11 @@ namespace DigitalTownHall
                         //
                         //c.EnableApiKeySupport("apiKey", "header");
                     });
+        }
+
+        private static string GetRootUrlFromAppConfig()
+        {
+            return ConfigurationManager.AppSettings["SwaggerRootUrl"].ToString(); 
         }
 
         private static string GetXmlCommentsPath()
