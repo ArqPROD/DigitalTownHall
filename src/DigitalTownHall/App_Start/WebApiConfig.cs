@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using DigitalTownHall.App_Start;
 
 namespace DigitalTownHall
 {
@@ -19,6 +20,9 @@ namespace DigitalTownHall
             //    routeTemplate: "api/{controller}/{id}",
             //    defaults: new { id = RouteParameter.Optional }
             //);
+
+            //Cors
+            config.EnableCors(new CustomCorsPolicyProvider());
         }
     }
 }

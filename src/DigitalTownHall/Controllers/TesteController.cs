@@ -11,6 +11,10 @@ namespace DigitalTownHall.Controllers
     public class TesteController : ApiController
     {
         // GET: api/Teste
+        /// <summary>
+        /// Gets a test value
+        /// </summary>
+        /// <returns>string values</returns>
         [HttpGet]
         [Route("")]
         public IEnumerable<string> Get()
