@@ -7,15 +7,20 @@ using System.Web.Http;
 
 namespace DigitalTownHall.Controllers
 {
+    [RoutePrefix("testes")]
     public class TesteController : ApiController
     {
         // GET: api/Teste
+        [HttpGet]
+        [Route("")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
         // GET: api/Teste/5
+        [HttpGet]
+        [Route("{id:int}")]
         public string Get(int id)
         {
             return "value";
