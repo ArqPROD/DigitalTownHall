@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace DigitalTownHall.Controllers
 {
-    [RoutePrefix("testes")]
+    [RoutePrefix("api/testes")]
     public class TesteController : ApiController
     {
         // GET: api/Teste
