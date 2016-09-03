@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace DigitalTownHall.Controllers
 {
     [RoutePrefix("api/testes")]
-    public class TesteController : ApiController
+    public class TesteController : MainController
     {
         // GET: api/Teste
         /// <summary>
@@ -31,16 +31,22 @@ namespace DigitalTownHall.Controllers
         }
 
         // POST: api/Teste
+        [HttpPost]
+        [Route("")]
         public void Post([FromBody]string value)
         {
         }
 
         // PUT: api/Teste/5
+        [HttpPut]
+        [Route("")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
         // DELETE: api/Teste/5
+        [HttpDelete]
+        [Route("{id:int}")]
         public void Delete(int id)
         {
         }

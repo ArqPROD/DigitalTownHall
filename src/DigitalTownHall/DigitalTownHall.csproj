@@ -95,17 +95,39 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Compile Include="Models\ConstrucaoMeioFio.cs" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\CustomCorsPolicyProvider.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AlunoController.cs" />
+    <Compile Include="Controllers\AnimalController.cs" />
+    <Compile Include="Controllers\ImovelController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\ServicoLimpezaController.cs" />
+    <Compile Include="Controllers\ServicoViaPublicaController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Adocao.cs" />
+    <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\Cidadao.cs" />
+    <Compile Include="Models\ColetaAnimal.cs" />
+    <Compile Include="Models\ColetaLixo.cs" />
+    <Compile Include="Models\DesobstrucaoCorrego.cs" />
+    <Compile Include="Models\DesobstrucaoViaPublica.cs" />
+    <Compile Include="Models\Disciplina.cs" />
+    <Compile Include="Models\DisciplinaAluno.cs" />
+    <Compile Include="Models\Endereco.cs" />
+    <Compile Include="Models\Imovel.cs" />
+    <Compile Include="Models\LimpezaBocaDeLobo.cs" />
+    <Compile Include="Models\PodaArvore.cs" />
+    <Compile Include="Models\RecolhimentoCarro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\DadosRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -119,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
