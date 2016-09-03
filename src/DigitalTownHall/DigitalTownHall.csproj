@@ -108,7 +108,6 @@
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\ServicoLimpezaController.cs" />
     <Compile Include="Controllers\ServicoViaPublicaController.cs" />
-    <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
